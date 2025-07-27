@@ -73,6 +73,19 @@ docker run -p 8501:8501 -v $PWD/data:/app/data video-scene-analyzer
 ```bash
 docker run --gpus all -p 8501:8501 -v $PWD/data:/app/data video-scene-analyzer
 ```
+## 3.3 Docker Compose
+Создание + запуск
+```bash
+docker compose up -d
+```
+Перезагрузка
+```bash
+docker compose restart
+```
+Остановка
+```bash
+docker compose down
+```
 
 ---
 
