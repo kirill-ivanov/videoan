@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  videoan:
+    build: .
+    volumes:
+      - ./data:/data
+      - ./models:/models
+      - ./preprocessing:/preprocessing
+    ports:
+      - "8501:8501"    
+    networks:
+      - an-network   
+
+networks:
+  an-network:    
